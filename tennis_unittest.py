@@ -13,7 +13,6 @@ class Test_Tennis(unittest.TestCase):
         return super().setUp()
 
     def test_deuce(self):
-
         self.tennis.playerOneWinsTheBall()
         self.tennis.playerOneWinsTheBall()
         self.tennis.playerOneWinsTheBall()
@@ -27,7 +26,6 @@ class Test_Tennis(unittest.TestCase):
         self.assertEqual(self.tennis.score(), "Deuce")
 
     def test_PlayerOneOutrightWinWith5balls(self):
-
         self.tennis.playerOneWinsTheBall()
         self.tennis.playerOneWinsTheBall()
         self.tennis.playerOneWinsTheBall()
@@ -39,12 +37,10 @@ class Test_Tennis(unittest.TestCase):
         self.assertEqual(self.tennis.score(), "Player One Wins")        
    
     def test_PlayerOneOutrightWinWith4balls(self):
-
         self.tennis.playerOneWinsTheBall()
         self.tennis.playerOneWinsTheBall()
         self.tennis.playerOneWinsTheBall()
-        self.tennis.playerOneWinsTheBall()
-  
+        self.tennis.playerOneWinsTheBall()  
         
         self.tennis.playerTwoWinsTheBall()
 
@@ -52,7 +48,6 @@ class Test_Tennis(unittest.TestCase):
 
 
     def test_PlayerTwoOutrightWin(self):
-
         self.tennis.playerTwoWinsTheBall()
         self.tennis.playerTwoWinsTheBall()
         self.tennis.playerTwoWinsTheBall()
@@ -64,13 +59,11 @@ class Test_Tennis(unittest.TestCase):
         self.assertEqual(self.tennis.score(), "Player Two Wins")       
 
     def test_Fifteen_Love(self):
-
         self.tennis.playerOneWinsTheBall()
 
         self.assertEqual(self.tennis.score(), "Fifteen Love")       
     
     def test_Thirty_Fifteen(self):
-
         self.tennis.playerOneWinsTheBall()
         self.tennis.playerOneWinsTheBall()
         self.tennis.playerTwoWinsTheBall()
@@ -78,7 +71,6 @@ class Test_Tennis(unittest.TestCase):
         self.assertEqual(self.tennis.score(), "Thirty Fifteen")   
 
     def test_Player_one_advantage(self):
-
         self.tennis.playerOneWinsTheBall()
         self.tennis.playerOneWinsTheBall()
         self.tennis.playerOneWinsTheBall()
@@ -91,11 +83,9 @@ class Test_Tennis(unittest.TestCase):
         self.assertEqual(self.tennis.score(), "Player One Advantage")   
 
     def test_Player_two_advantage(self):
-
         self.tennis.playerOneWinsTheBall()
         self.tennis.playerOneWinsTheBall()
         self.tennis.playerOneWinsTheBall()
-
 
         self.tennis.playerTwoWinsTheBall()
         self.tennis.playerTwoWinsTheBall()
