@@ -22,11 +22,13 @@ class TennisKata:
             return 'Player Two Wins' 
         return self.getLiteralScore(self.player1Score) + " " +  self.getLiteralScore(self.player2Score)    
 
-    def playerOneWinsTheBall(self):
-        self.player1Score = self.player1Score + 1
+    def playerOneWinsTheBall(self, count = 1):
+        for x in range(count):
+            self.player1Score = self.player1Score + 1
 
-    def playerTwoWinsTheBall(self):
-        self.player2Score = self.player2Score + 1
+    def playerTwoWinsTheBall(self, count = 1):
+        for x in range(count):
+            self.player2Score = self.player2Score + 1
 
     def getLiteralScore(self, score: int):
         match score:
